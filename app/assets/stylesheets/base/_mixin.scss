@@ -33,7 +33,7 @@
       -ms-align-items: $align;
           align-items: $align;
 }
-@mixin transition($val) {
+@mixin transition($val...) {
   -webkit-transition: $val;
        -o-transition: $val;
           transition: $val;
@@ -67,10 +67,4 @@
   -webkit-transition: all 0.3s ease;
        -o-transition: all 0.3s ease;
           transition: all 0.3s ease;
-}
-@mixin flex-direction(column) {
-      -webkit-box-orient: vertical;
-   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
