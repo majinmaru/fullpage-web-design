@@ -1,0 +1,110 @@
+@import 'base/color.scss';
+@import 'base/font.scss';
+@import 'base/mixin.scss';
+@keyframes from-bottom {
+    0% {
+		opacity: 0;
+		bottom: -3px;
+	}
+	50% {
+	    opacity: 0.5;
+		bottom: -1.5px;
+	}
+	100% {
+		opacity: 1;
+		bottom: 0;
+	}
+}
+
+.section {
+    background-color: $main-color;
+}
+
+#section1 {
+    .fp-tableCell {
+        display: block;
+    }
+    .history {
+        @include flexbox();
+        @include justify-content(space-between);
+        @include align-items(center);
+        @include transition-three-sec();
+        width: 50%;
+        height: auto;
+        position: relative;
+        top: 25%;
+        margin-left: 25%;
+        background-image: url('/assets/section1/bg-1833.png');
+        background-size: 40%;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        .history-image-box {
+            width: 30%;
+            display: block;
+            position: relative;
+            .history-image {
+                width: 100%;
+            }
+        }
+        .history-description {
+            width: 60%;
+            display: block;
+            position: relative;
+            overflow: hidden;
+            p {
+                @include transition-three-sec();
+                display: none;
+                color: $font-white;
+                font-family: 'Nanum Myeongjo';
+                text-align: left;
+                font-size: 1rem;
+                line-height: 2rem;
+                &.active {
+                    @include animation(from-bottom 0.3s);
+                    display: block;
+                }
+            }
+        }
+    }
+    .timeline {
+        @include flexbox();
+        @include flex-wrap(wrap);
+        @include justify-content(center);
+        clear: both;
+        width: 50%;
+        position: absolute;
+        margin-left: 25%;
+        bottom: 15%;
+        li {
+            @include transition-three-sec();
+            margin-right: 1.5rem;
+            margin-left: 1.5rem;
+            margin-bottom: 2rem;
+            cursor: pointer;
+            .year {
+                @include transition-three-sec();
+                position: relative;
+                font-family: 'Copperplate Gothic Light';
+                color: $font-white-800;
+                font-size: 1.3rem;
+                border-bottom: 0;
+            }
+            &:hover {
+                .year {
+                    color: $font-white;
+                    border-bottom: 0.3rem solid $font-white;
+                    text-shadow: 2px 2px 4px $text-shadow;
+                    top: -2px;
+                }
+            }
+            &.active {
+                .year {
+                    color: $font-white;
+                    border-bottom: 0.3rem solid $font-white;
+                    text-shadow: 2px 2px 4px $text-shadow;
+                    top: -2px;
+                }
+            }
+        }
+    }
+}

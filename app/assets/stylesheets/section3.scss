@@ -1,0 +1,134 @@
+@import 'base/color.scss';
+@import 'base/font.scss';
+@import 'base/mixin.scss';
+@keyframes card-appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.section {
+    background-color: $main-color;
+}
+
+#section3 {
+    .issues {
+        position: relative;
+        .card-nav {
+            cursor: pointer;
+            padding: 1rem;
+            display: inline-block;
+            border-bottom: 1px solid $white;
+            border-left: 1px solid $white;
+            position: absolute;
+            top: 45%;
+            &.left {
+                @include transform(rotate(45deg));
+                float: left;
+                left: 15%;
+                &.hidden {
+                    display: none;
+                }
+            }
+            &.right {
+                @include transform(rotate(-135deg));
+                float: right;
+                right: 15%;
+                &.hidden {
+                    display: none;
+                }
+            }
+        }
+        .card-container {
+            width: 55%;
+            height: auto;
+            display: block;
+            overflow: hidden;
+            margin-left: 22.5%;
+            cursor: pointer;
+            .card {
+                @include box-sizing(border-box);
+                @include transition-three-sec();
+                display: none;
+                width: 100%;
+                height: auto;
+                text-align: center;
+                border: 1px solid $white;
+                background-size: cover;
+                background-repeat: no-repeat;
+                &.active {
+                    display: block;
+                }
+                .card-align{
+                    position: relative;
+                    display: block;
+                    padding: 5rem 0;
+                    .card-date{
+                        font-family: 'Copperplate Gothic Light';
+                        color: $font-white;
+                        font-size: 0.8rem;
+                    }
+                    .card-title {
+                        margin: 2rem auto 0 auto;
+                        width: 50%;
+                        font-family: 'Nanum Myeongjo', serif;
+                        color: $font-white;
+                        font-size: 1.2rem;
+                        line-height: 2rem;
+                    }
+                    .card-subtitle {
+                        @include text-overflow(ellipsis);
+                        margin: 2rem auto 0 auto;
+                        width: 40%;
+                        font-family: 'Nanum Myeongjo', serif;
+                        color: $font-white-500;
+                        font-size: 1rem;
+                        line-height: 1.5rem;
+                        white-space: normal;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2; 
+                        -webkit-box-orient: vertical;
+                        height: 3rem;
+                    }
+                    .card-button {
+                        @include transition-three-sec();
+                        display: inline-block;
+                        margin-top: 2rem;
+                        padding: 0.5rem 1rem;
+                        font-family: 'Nanum Myeongjo', serif;
+                        color: $font-white;
+                        font-size: 0.8rem;
+                        border: 1px solid $white;
+                        &:hover {
+                            letter-spacing: 0.3rem;
+                        }
+                    }
+                }
+                &:hover {
+                    .card-align{
+                        .card-title {
+                            @include text-decoration(underline solid $white);
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    .footer {
+        width: 100%;
+        position: absolute;
+        bottom: 3%;
+        p{
+            color: $font-white-500;
+            font-family: 'Copperplate Gothic Light';
+            font-size: 0.8rem;
+            text-align: center;
+        }
+    }
+}

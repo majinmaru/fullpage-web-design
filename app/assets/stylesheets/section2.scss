@@ -1,0 +1,305 @@
+@import 'base/color.scss';
+@import 'base/font.scss';
+@import 'base/mixin.scss';
+
+@keyframes list-disappear {
+    0% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes list-appear {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes image-appear {
+    0%{
+        opacity: 0;
+        bottom: -3px;
+    }
+    100% {
+        opacity: 1;
+        bottom: 0;
+    }
+}
+
+.section {
+    background-color: $main-color;
+}
+#section2 {
+    background-image: url('/assets/section2/section2-bg.png');
+    background-size: 25%;
+    background-position: 95% bottom;
+    background-repeat: no-repeat;
+    .product-info{
+        width: 70%;
+        height: 65vh;
+        margin: 10vh auto 5vh auto;
+        display: block;
+        .selectbox {
+            width: 32%;
+            height: 3rem;
+        }
+        .hide-select {
+            display: none;
+        }
+        .select {
+            position: relative;
+            width: 32%;
+            font-family: 'Nanum Myeongjo', serif;
+            color: $font-white;
+            float: left;
+            z-index: 100;
+        }
+        .new-select {
+            width: 100%;
+            padding: 0.5rem 0.5rem;
+            background-color: transparent;
+            outline: none;
+            cursor: pointer;
+            font-family: 'Nanum Myeongjo', serif;
+            color: $font-white;
+            font-size: 0.8rem;
+            text-align: left;
+            &:after {
+                @include transition(bottom 0.3s ease);
+                content: '\02228';
+                transform: translate(-4px, 4px);
+                font-family: 'Nanum Myeongjo', serif;
+                color: $font-white;
+                margin: 0.3rem 0 0 0.3rem;
+                display: block;
+                position: relative;
+            }
+            &:hover {
+                &:after {
+                    bottom: -2px;
+                }
+            }
+        }
+        .options {
+            display: none;
+            font-size: 0.7rem;
+            text-align: left;
+            color: $font-white-500;
+            position: relative;
+            top: 100%;
+            right: 0;
+            left: 0;
+            list-style: none;
+            width: 100%;
+            height: auto;
+            background-color: transparent;
+            cursor: pointer;
+            li {
+                @include transition(background-color 0.3s ease, color 0.3s ease);
+                padding: 0.5rem 0.5rem;
+                display: block;
+                z-index: 100;
+                &:hover {
+                    background-color: $white-800;
+                    color: $font-white;
+                }
+            }
+        }
+        select:-moz-focusring {
+            color: transparent;
+            text-shadow: 0 0 0 #000;
+        }
+        
+        
+        .back {
+            @include transition(color 0.3s ease);
+            float: right;
+            width: 8rem;
+            border-top: 2px solid $white;
+            padding-top: 0.2rem;
+            color: $font-white-500;
+            font-size: 0.8rem;
+            font-family: 'Copperplate Gothic Light';
+            text-align: right;
+            cursor: pointer;
+            &:hover {
+                color: $font-white;
+            }
+        }
+        .product-image-box {
+            width: 35%;
+            margin: 0 auto;
+            .product-image{
+                @include animation(image-appear 0.3s ease);
+                width: 100%;
+                position: relative;
+                &.appear {
+                    @include animation(image-appear 0.3s ease);
+                    transition: all 0.3s ease;
+                }
+                &.hidden {
+                    visibility: hidden;
+                }
+            }
+        }
+        .product-name-nav {
+            width: 100%;
+            display: block;
+            margin: 2rem auto 0 auto;
+            .product-nav {
+                width: 2rem;
+                height: 2rem;
+                border-left: 1px solid $white;
+                border-bottom: 1px solid $white;
+                display: inline-block;
+                position: relative;
+                cursor: pointer;
+                &.left {
+                    @include transition(left 0.3s ease);
+                    @include transform(rotate(45deg));
+                    &:hover {
+                        left: -4px;
+                    }
+                }
+                &.right {
+                    @include transition(right 0.3s ease);
+                    @include transform(rotate(-135deg));
+                    &:hover {
+                        right: -4px;
+                    }
+                }
+            }
+            #watch-reverso, #watch-rendez-vous, #watch-master, #watch-jaeger-lecoultre-polaris,
+            #watch-geophysic, #watch-duometre, #watch-atmos, #watch-hybris-mechanica {
+                &.active {
+                    display: inline-block;
+                }
+            }
+            .product-name {
+                display: none;
+                width: 50%;
+                margin: 0 auto;
+                .product-ko-name {
+                    width: 100%;
+                    display: block;
+                    font-family: 'Nanum Myeongjo', serif;
+                    font-size: 1.2rem;
+                    color: $font-white;
+                    margin-top: 0.2rem;
+                    margin-bottom: 0.2rem;
+                }
+                .product-en-name {
+                    width: 100%;
+                    font-family: 'Copperplate Gothic Light';
+                    font-size: 0.7rem;
+                    color: $font-white-500;
+                }
+            }
+        }
+        .product-more-button {
+            display: block;
+            margin-top: 3rem;
+            span {
+                @include transition-three-sec();
+                font-family: 'Nanum Myeongjo', serif;
+                font-size: 1rem;
+                color: $font-white;
+                padding: 0.5rem 1rem;
+                border: 1px solid $white;
+                cursor: pointer;
+                &:hover {
+                    letter-spacing: 0.2rem;
+                }
+            }
+        }
+        &.active {
+            @include animation(list-appear 0.2s);
+            display: block;
+        }
+    }
+    .product-list{
+        @include flexbox();
+        @include transition-three-sec();
+        width: 60%;
+        height: 55vh;
+        margin: 20vh auto 5vh auto;
+        border-left: 2px solid $white;
+        border-bottom: 2px solid $white;
+        .list-part {
+            @include flexbox();
+            @include flex-wrap(wrap);
+            @include flex-direction(column);
+            width: 70%;
+            height: 55vh;
+            .list {
+                @include box-sizing(border-box);
+                @include transition-three-sec();
+                width: 50%;
+                border-bottom: 2px solid transparent;
+                display: block;
+                padding: 1rem;
+                margin: 1rem 0 1rem 2rem;
+                text-align: left;
+                cursor: pointer;
+                .ko-list {
+                    font-family: 'Nanum Myeongjo', serif;
+                    color:$font-white-500;
+                    font-size: 1rem;
+                    display: block;
+                    margin-bottom: 0.3rem;
+                    &.active {
+                        color: $font-white;
+                    }
+                }
+                .en-list {
+                    font-family: 'Copperplate Gothic Light';
+                    color: $font-white-750;
+                    font-size: 0.7rem;
+                    display: block;
+                    &.active {
+                        color: $font-white-500;
+                    }
+                }
+                &:hover {
+                    background-color: $white-800;
+                    border-bottom: 2px solid $white;
+                    .ko-list {
+                        color: $font-white;
+                    }
+                    .en-list {
+                        color: $font-white-500;
+                    }
+                }
+            }
+        }
+        &.disappear {
+            @include flexbox();
+            @include animation(list-disappear 0.3s);
+        }
+        &.active {
+            @include flexbox();
+            @include animation(list-appear 0.3s);
+        }
+    }
+    .company-name-box {
+        display: block;
+        width: 20%;
+        float: right;
+        margin-right: 20%;
+        .company-name {
+            width: 100%;
+        }
+        &.hidden {
+            display: none;
+        }
+    }
+}

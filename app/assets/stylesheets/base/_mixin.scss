@@ -1,0 +1,76 @@
+@mixin prefix($property, $val){
+  -webkit-#{$property}: $val;
+  -moz-#{$property}: $val;
+  -ms-#{$property}: $val;
+  #{$property}: $val;
+}
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+@mixin flex-wrap($wrap) {
+      -ms-flex-wrap: $wrap;
+          flex-wrap: $wrap;
+}
+@mixin flex-direction($val) {
+   -webkit-box-direction: $val;
+      -ms-flex-direction: $val;
+          flex-direction: $val;
+}
+@mixin justify-content($justify) {
+  -webkit-justify-content: $justify;
+     -moz-justify-content: $justify;
+      -ms-justify-content: $justify;
+          justify-content: $justify;
+            -ms-flex-pack: $justify;
+}
+@mixin align-items($align) {
+  -webkit-align-items: $align;
+     -moz-align-items: $align;
+      -ms-align-items: $align;
+          align-items: $align;
+}
+@mixin transition($val) {
+  -webkit-transition: $val;
+       -o-transition: $val;
+          transition: $val;
+}
+@mixin animation($val) {
+    -webkit-animation: $val;
+            animation: $val;
+}
+@mixin transform($val) {
+    -webkit-transform: $val;
+        -ms-transform: $val;
+            transform: $val;
+}
+@mixin box-sizing($val) {
+  -webkit-box-sizing: $val; // Safari <= 5
+     -moz-box-sizing: $val; // Firefox <= 19
+          box-sizing: $val;
+}
+@mixin text-overflow($val) {
+    -o-text-overflow: $val;
+       text-overflow: $val;
+}
+@mixin text-decoration($val) {
+    -webkit-text-decoration: $val;
+            text-decoration: $val;
+}
+
+
+//custom//
+@mixin transition-three-sec() {
+  -webkit-transition: all 0.3s ease;
+       -o-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+@mixin flex-direction(column) {
+      -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}

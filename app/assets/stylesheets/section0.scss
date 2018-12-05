@@ -1,0 +1,182 @@
+@import 'base/color.scss';
+@import 'base/font.scss';
+@import 'base/mixin.scss';
+
+.section {
+    background-color: $main-color;
+}
+
+/////////////////////////////////section0
+#section0 {
+    .intro {
+        @include flexbox();
+        @include justify-content(center);
+        @include align-items(center);
+        width: 100%;
+        height: 100%;
+        background-image: url('/assets/section0/intro-bg.png');
+        background-size: cover;
+        background-position: center;
+        .clock {
+            width: auto;
+            height: 60%;
+            display: block;
+            img {
+                height: 100%;
+            }
+        }
+    }
+}
+
+
+
+
+/////////////////////////////////top-nav with sns icons
+
+#menu{
+	position: fixed;
+	top:0;
+	left:0;
+	height: auto;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+.logo-box {
+    position: relative;
+    display: inline-block;
+    width: 12%;
+    height: auto;
+    margin-left: 6%;
+    margin-top: 3rem;
+    .logo {
+        width: 100%;
+    }
+}
+.sns {
+    @include flexbox();
+    @include justify-content(space-between);
+    @include flex-wrap(nowrap);
+    width: 10%;
+    float: right;
+    margin-top: 5rem;
+    margin-right: 6%;
+    li {
+        @include transition(all 0.3s ease);
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 0.5rem;
+        border: 1px solid $white;
+        margin: -0.25rem 0 0 -0.25rem;
+        background: transparent;
+        text-indent: -9999px;
+        .icon {
+            width: 0;
+            height: 0;
+        }
+        &:hover {
+            width: 2rem;
+            height: 2rem;
+            margin: -1rem 0 0 -1rem;
+            cursor: pointer;
+            .icon {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+        }
+    }
+}
+
+
+
+/////////////////////////////////navigation
+#fp-nav.left {
+    left: 5%;
+}
+
+#fp-nav ul,
+.fp-slidesNav ul {
+  margin: 0;
+  padding: 0;
+}
+#fp-nav ul li,
+.fp-slidesNav ul li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 0;
+    margin-top: 2rem;
+    position:relative;
+}
+.fp-slidesNav ul li {
+    display: inline-block;
+}
+#fp-nav ul li a,
+.fp-slidesNav ul li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span{
+    height: 12px;
+    width: 12px;
+    border-radius: 0;
+    
+ }
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    border-radius: 0;
+    position: absolute;
+    z-index: 1;
+    height: 4px;
+    width: 4px;
+    border: 1px solid $white;
+    background: transparent;
+    left: 50%;
+    top: 50%;
+    
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span{
+    width: 10px;
+    height: 10px;
+    margin: -5px 0px 0px -5px;
+}
+
+
+/////////////////////////////////tooltip
+
+#fp-nav ul li .fp-tooltip {
+    position: absolute;
+    top: 1px;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Copperplate Gothic Light';
+    white-space: nowrap;
+    max-width: 220px;
+    overflow: hidden;
+    display: block;
+    opacity: 0;
+    width: 0;
+    cursor: pointer;
+}
+#fp-nav ul li:hover .fp-tooltip,
+#fp-nav.fp-show-active a.active + .fp-tooltip {
+    -webkit-transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
+    width: auto;
+    opacity: 1;
+}
