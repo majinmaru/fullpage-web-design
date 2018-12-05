@@ -1,0 +1,258 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document ========================================================================== */
+/** 1. Correct the line height in all browsers. 2. Prevent adjustments of font size after orientation changes in iOS. */
+@import url("https://fonts.googleapis.com/css?family=Nanum+Myeongjo");
+@import url(jquery.fullpage.css);
+@import url(examples.css);
+@import url("https://fonts.googleapis.com/css?family=Nanum+Myeongjo");
+@import url("https://fonts.googleapis.com/css?family=Nanum+Myeongjo");
+@import url("https://fonts.googleapis.com/css?family=Nanum+Myeongjo");
+@import url("https://fonts.googleapis.com/css?family=Nanum+Myeongjo");
+html { line-height: 1.15; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ }
+
+/* Sections ========================================================================== */
+/** Remove the margin in all browsers. */
+body { margin: 0; }
+
+/** Render the `main` element consistently in IE. */
+main { display: block; }
+
+/** Correct the font size and margin on `h1` elements within `section` and `article` contexts in Chrome, Firefox, and Safari. */
+h1 { font-size: 2em; margin: 0.67em 0; }
+
+/* Grouping content ========================================================================== */
+/** 1. Add the correct box sizing in Firefox. 2. Show the overflow in Edge and IE. */
+hr { box-sizing: content-box; /* 1 */ height: 0; /* 1 */ overflow: visible; /* 2 */ }
+
+/** 1. Correct the inheritance and scaling of font size in all browsers. 2. Correct the odd `em` font sizing in all browsers. */
+pre { font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
+
+/* Text-level semantics ========================================================================== */
+/** Remove the gray background on active links in IE 10. */
+a { background-color: transparent; }
+
+/** 1. Remove the bottom border in Chrome 57- 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
+abbr[title] { border-bottom: none; /* 1 */ text-decoration: underline; /* 2 */ text-decoration: underline dotted; /* 2 */ }
+
+/** Add the correct font weight in Chrome, Edge, and Safari. */
+b, strong { font-weight: bolder; }
+
+/** 1. Correct the inheritance and scaling of font size in all browsers. 2. Correct the odd `em` font sizing in all browsers. */
+code, kbd, samp { font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
+
+/** Add the correct font size in all browsers. */
+small { font-size: 80%; }
+
+/** Prevent `sub` and `sup` elements from affecting the line height in all browsers. */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+sub { bottom: -0.25em; }
+
+sup { top: -0.5em; }
+
+/* Embedded content ========================================================================== */
+/** Remove the border on images inside links in IE 10. */
+img { border-style: none; }
+
+/* Forms ========================================================================== */
+/** 1. Change the font styles in all browsers. 2. Remove the margin in Firefox and Safari. */
+button, input, optgroup, select, textarea { font-family: inherit; /* 1 */ font-size: 100%; /* 1 */ line-height: 1.15; /* 1 */ margin: 0; /* 2 */ }
+
+/** Show the overflow in IE. 1. Show the overflow in Edge. */
+button, input { /* 1 */ overflow: visible; }
+
+/** Remove the inheritance of text transform in Edge, Firefox, and IE. 1. Remove the inheritance of text transform in Firefox. */
+button, select { /* 1 */ text-transform: none; }
+
+/** Correct the inability to style clickable types in iOS and Safari. */
+button, [type="button"], [type="reset"], [type="submit"] { -webkit-appearance: button; }
+
+/** Remove the inner border and padding in Firefox. */
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner { border-style: none; padding: 0; }
+
+/** Restore the focus styles unset by the previous rule. */
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring { outline: 1px dotted ButtonText; }
+
+/** Correct the padding in Firefox. */
+fieldset { padding: 0.35em 0.75em 0.625em; }
+
+/** 1. Correct the text wrapping in Edge and IE. 2. Correct the color inheritance from `fieldset` elements in IE. 3. Remove the padding so developers are not caught out when they zero out `fieldset` elements in all browsers. */
+legend { box-sizing: border-box; /* 1 */ color: inherit; /* 2 */ display: table; /* 1 */ max-width: 100%; /* 1 */ padding: 0; /* 3 */ white-space: normal; /* 1 */ }
+
+/** Add the correct vertical alignment in Chrome, Firefox, and Opera. */
+progress { vertical-align: baseline; }
+
+/** Remove the default vertical scrollbar in IE 10+. */
+textarea { overflow: auto; }
+
+/** 1. Add the correct box sizing in IE 10. 2. Remove the padding in IE 10. */
+[type="checkbox"], [type="radio"] { box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ }
+
+/** Correct the cursor style of increment and decrement buttons in Chrome. */
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button { height: auto; }
+
+/** 1. Correct the odd appearance in Chrome and Safari. 2. Correct the outline style in Safari. */
+[type="search"] { -webkit-appearance: textfield; /* 1 */ outline-offset: -2px; /* 2 */ }
+
+/** Remove the inner padding in Chrome and Safari on macOS. */
+[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/** 1. Correct the inability to style clickable types in iOS and Safari. 2. Change font properties to `inherit` in Safari. */
+::-webkit-file-upload-button { -webkit-appearance: button; /* 1 */ font: inherit; /* 2 */ }
+
+/* Interactive ========================================================================== */
+/* Add the correct display in Edge, IE 10+, and Firefox. */
+details { display: block; }
+
+/* Add the correct display in all browsers. */
+summary { display: list-item; }
+
+/* Misc ========================================================================== */
+/** Add the correct display in IE 10+. */
+template { display: none; }
+
+/** Add the correct display in IE 10. */
+[hidden] { display: none; }
+
+@font-face { font-family: 'Copperplate Gothic Light'; font-style: normal; font-weight: normal; src: local("/assets/Copperplate Gothic Light"), url("/assets/copperplate-gothic-light.woff") format("woff"); }
+@font-face { font-family: 'Copperplate Gothic Light'; font-style: normal; font-weight: normal; src: local("/assets/Copperplate Gothic Light"), url("/assets/copperplate-gothic-light.woff") format("woff"); }
+.section { background-color: #041419; }
+
+#section0 .intro { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-justify-content: center; -moz-justify-content: center; -ms-justify-content: center; justify-content: center; -ms-flex-pack: center; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; align-items: center; width: 100%; height: 100%; background-image: url("/assets/section0/intro-bg.png"); background-size: cover; background-position: center; }
+#section0 .intro .clock { width: auto; height: 60%; display: block; }
+#section0 .intro .clock img { height: 100%; }
+
+#menu { position: fixed; top: 0; left: 0; height: auto; z-index: 70; width: 100%; padding: 0; margin: 0; }
+
+.logo-box { position: relative; display: inline-block; width: 12%; height: auto; margin-left: 6%; margin-top: 3rem; }
+.logo-box .logo { width: 100%; }
+
+.sns { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-justify-content: space-between; -moz-justify-content: space-between; -ms-justify-content: space-between; justify-content: space-between; -ms-flex-pack: space-between; -ms-flex-wrap: nowrap; flex-wrap: nowrap; width: 10%; float: right; margin-top: 5rem; margin-right: 6%; }
+.sns li { -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; width: 0.5rem; height: 0.5rem; border-radius: 0.5rem; border: 1px solid #fff; margin: -0.25rem 0 0 -0.25rem; background: transparent; text-indent: -9999px; }
+.sns li .icon { width: 0; height: 0; }
+.sns li:hover { width: 2rem; height: 2rem; margin: -1rem 0 0 -1rem; cursor: pointer; }
+.sns li:hover .icon { width: 100%; height: 100%; display: block; }
+
+#fp-nav.left { left: 5%; }
+
+#fp-nav ul, .fp-slidesNav ul { margin: 0; padding: 0; }
+
+#fp-nav ul li, .fp-slidesNav ul li { display: block; width: 14px; height: 13px; margin: 0; margin-top: 2rem; position: relative; }
+
+.fp-slidesNav ul li { display: inline-block; }
+
+#fp-nav ul li a, .fp-slidesNav ul li a { display: block; position: relative; z-index: 1; width: 100%; height: 100%; cursor: pointer; text-decoration: none; }
+
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span { height: 12px; width: 12px; border-radius: 0; }
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span { border-radius: 0; position: absolute; z-index: 1; height: 4px; width: 4px; border: 1px solid #fff; background: transparent; left: 50%; top: 50%; -webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; }
+
+#fp-nav ul li:hover a span, .fp-slidesNav ul li:hover a span { width: 10px; height: 10px; margin: -5px 0px 0px -5px; }
+
+#fp-nav ul li .fp-tooltip { position: absolute; top: 1px; color: #fff; font-size: 14px; font-family: 'Copperplate Gothic Light'; white-space: nowrap; max-width: 220px; overflow: hidden; display: block; opacity: 0; width: 0; cursor: pointer; }
+
+#fp-nav ul li:hover .fp-tooltip, #fp-nav.fp-show-active a.active + .fp-tooltip { -webkit-transition: opacity 0.2s ease-in; transition: opacity 0.2s ease-in; width: auto; opacity: 1; }
+
+@font-face { font-family: 'Copperplate Gothic Light'; font-style: normal; font-weight: normal; src: local("/assets/Copperplate Gothic Light"), url("/assets/copperplate-gothic-light.woff") format("woff"); }
+@keyframes from-bottom { 0% { opacity: 0; bottom: -3px; }
+  50% { opacity: 0.5; bottom: -1.5px; }
+  100% { opacity: 1; bottom: 0; } }
+.section { background-color: #041419; }
+
+#section1 .fp-tableCell { display: block; }
+#section1 .history { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-justify-content: space-between; -moz-justify-content: space-between; -ms-justify-content: space-between; justify-content: space-between; -ms-flex-pack: space-between; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; align-items: center; -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; width: 50%; height: auto; position: relative; top: 25%; margin-left: 25%; background-image: url("/assets/section1/bg-1833.png"); background-size: 40%; background-position: right bottom; background-repeat: no-repeat; }
+#section1 .history .history-image-box { width: 30%; display: block; position: relative; }
+#section1 .history .history-image-box .history-image { width: 100%; }
+#section1 .history .history-description { width: 60%; display: block; position: relative; overflow: hidden; }
+#section1 .history .history-description p { -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; display: none; color: #fff; font-family: 'Nanum Myeongjo'; text-align: left; font-size: 1rem; line-height: 2rem; }
+#section1 .history .history-description p.active { -webkit-animation: from-bottom 0.3s; animation: from-bottom 0.3s; display: block; }
+#section1 .timeline { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-justify-content: center; -moz-justify-content: center; -ms-justify-content: center; justify-content: center; -ms-flex-pack: center; clear: both; width: 50%; position: absolute; margin-left: 25%; bottom: 15%; }
+#section1 .timeline li { -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; margin-right: 1.5rem; margin-left: 1.5rem; margin-bottom: 2rem; cursor: pointer; }
+#section1 .timeline li .year { -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; position: relative; font-family: 'Copperplate Gothic Light'; color: rgba(255, 255, 255, 0.2); font-size: 1.3rem; border-bottom: 0; }
+#section1 .timeline li:hover .year { color: #fff; border-bottom: 0.3rem solid #fff; text-shadow: 2px 2px 4px #010405; top: -2px; }
+#section1 .timeline li.active .year { color: #fff; border-bottom: 0.3rem solid #fff; text-shadow: 2px 2px 4px #010405; top: -2px; }
+
+@font-face { font-family: 'Copperplate Gothic Light'; font-style: normal; font-weight: normal; src: local("/assets/Copperplate Gothic Light"), url("/assets/copperplate-gothic-light.woff") format("woff"); }
+@keyframes list-disappear { 0% { opacity: 1; }
+  99% { opacity: 0; }
+  100% { opacity: 0; } }
+@keyframes list-appear { 0% { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; } }
+@keyframes image-appear { 0% { opacity: 0; bottom: -3px; }
+  100% { opacity: 1; bottom: 0; } }
+.section { background-color: #041419; }
+
+#section2 { background-image: url("/assets/section2/section2-bg.png"); background-size: 25%; background-position: 95% bottom; background-repeat: no-repeat; }
+#section2 .product-info { width: 70%; height: 65vh; margin: 10vh auto 5vh auto; display: block; }
+#section2 .product-info .selectbox { width: 32%; height: 3rem; }
+#section2 .product-info .hide-select { display: none; }
+#section2 .product-info .select { position: relative; width: 32%; font-family: 'Nanum Myeongjo', serif; color: #fff; float: left; z-index: 100; }
+#section2 .product-info .new-select { width: 100%; padding: 0.5rem 0.5rem; background-color: transparent; outline: none; cursor: pointer; font-family: 'Nanum Myeongjo', serif; color: #fff; font-size: 0.8rem; text-align: left; }
+#section2 .product-info .new-select:after { -webkit-transition: bottom 0.3s ease; -o-transition: bottom 0.3s ease; transition: bottom 0.3s ease; content: '\02228'; transform: translate(-4px, 4px); font-family: 'Nanum Myeongjo', serif; color: #fff; margin: 0.3rem 0 0 0.3rem; display: block; position: relative; }
+#section2 .product-info .new-select:hover:after { bottom: -2px; }
+#section2 .product-info .options { display: none; font-size: 0.7rem; text-align: left; color: rgba(255, 255, 255, 0.5); position: relative; top: 100%; right: 0; left: 0; list-style: none; width: 100%; height: auto; background-color: transparent; cursor: pointer; }
+#section2 .product-info .options li { -webkit-transition: background-color 0.3s ease, color 0.3s ease; -o-transition: background-color 0.3s ease, color 0.3s ease; transition: background-color 0.3s ease, color 0.3s ease; padding: 0.5rem 0.5rem; display: block; z-index: 100; }
+#section2 .product-info .options li:hover { background-color: rgba(255, 255, 255, 0.2); color: #fff; }
+#section2 .product-info select:-moz-focusring { color: transparent; text-shadow: 0 0 0 #000; }
+#section2 .product-info .back { -webkit-transition: color 0.3s ease; -o-transition: color 0.3s ease; transition: color 0.3s ease; float: right; width: 8rem; border-top: 2px solid #fff; padding-top: 0.2rem; color: rgba(255, 255, 255, 0.5); font-size: 0.8rem; font-family: 'Copperplate Gothic Light'; text-align: right; cursor: pointer; }
+#section2 .product-info .back:hover { color: #fff; }
+#section2 .product-info .product-image-box { width: 35%; margin: 0 auto; }
+#section2 .product-info .product-image-box .product-image { -webkit-animation: image-appear 0.3s ease; animation: image-appear 0.3s ease; width: 100%; position: relative; }
+#section2 .product-info .product-image-box .product-image.appear { -webkit-animation: image-appear 0.3s ease; animation: image-appear 0.3s ease; transition: all 0.3s ease; }
+#section2 .product-info .product-image-box .product-image.hidden { visibility: hidden; }
+#section2 .product-info .product-name-nav { width: 100%; display: block; margin: 2rem auto 0 auto; }
+#section2 .product-info .product-name-nav .product-nav { width: 2rem; height: 2rem; border-left: 1px solid #fff; border-bottom: 1px solid #fff; display: inline-block; position: relative; cursor: pointer; }
+#section2 .product-info .product-name-nav .product-nav.left { -webkit-transition: left 0.3s ease; -o-transition: left 0.3s ease; transition: left 0.3s ease; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+#section2 .product-info .product-name-nav .product-nav.left:hover { left: -4px; }
+#section2 .product-info .product-name-nav .product-nav.right { -webkit-transition: right 0.3s ease; -o-transition: right 0.3s ease; transition: right 0.3s ease; -webkit-transform: rotate(-135deg); -ms-transform: rotate(-135deg); transform: rotate(-135deg); }
+#section2 .product-info .product-name-nav .product-nav.right:hover { right: -4px; }
+#section2 .product-info .product-name-nav #watch-reverso.active, #section2 .product-info .product-name-nav #watch-rendez-vous.active, #section2 .product-info .product-name-nav #watch-master.active, #section2 .product-info .product-name-nav #watch-jaeger-lecoultre-polaris.active, #section2 .product-info .product-name-nav #watch-geophysic.active, #section2 .product-info .product-name-nav #watch-duometre.active, #section2 .product-info .product-name-nav #watch-atmos.active, #section2 .product-info .product-name-nav #watch-hybris-mechanica.active { display: inline-block; }
+#section2 .product-info .product-name-nav .product-name { display: none; width: 50%; margin: 0 auto; }
+#section2 .product-info .product-name-nav .product-name .product-ko-name { width: 100%; display: block; font-family: 'Nanum Myeongjo', serif; font-size: 1.2rem; color: #fff; margin-top: 0.2rem; margin-bottom: 0.2rem; }
+#section2 .product-info .product-name-nav .product-name .product-en-name { width: 100%; font-family: 'Copperplate Gothic Light'; font-size: 0.7rem; color: rgba(255, 255, 255, 0.5); }
+#section2 .product-info .product-more-button { display: block; margin-top: 3rem; }
+#section2 .product-info .product-more-button span { -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; font-family: 'Nanum Myeongjo', serif; font-size: 1rem; color: #fff; padding: 0.5rem 1rem; border: 1px solid #fff; cursor: pointer; }
+#section2 .product-info .product-more-button span:hover { letter-spacing: 0.2rem; }
+#section2 .product-info.active { -webkit-animation: list-appear 0.2s; animation: list-appear 0.2s; display: block; }
+#section2 .product-list { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; width: 60%; height: 55vh; margin: 20vh auto 5vh auto; border-left: 2px solid #fff; border-bottom: 2px solid #fff; }
+#section2 .product-list .list-part { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 70%; height: 55vh; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+#section2 .product-list .list-part .list { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; width: 50%; border-bottom: 2px solid transparent; display: block; padding: 1rem; margin: 1rem 0 1rem 2rem; text-align: left; cursor: pointer; }
+#section2 .product-list .list-part .list .ko-list { font-family: 'Nanum Myeongjo', serif; color: rgba(255, 255, 255, 0.5); font-size: 1rem; display: block; margin-bottom: 0.3rem; }
+#section2 .product-list .list-part .list .ko-list.active { color: #fff; }
+#section2 .product-list .list-part .list .en-list { font-family: 'Copperplate Gothic Light'; color: rgba(255, 255, 255, 0.25); font-size: 0.7rem; display: block; }
+#section2 .product-list .list-part .list .en-list.active { color: rgba(255, 255, 255, 0.5); }
+#section2 .product-list .list-part .list:hover { background-color: rgba(255, 255, 255, 0.2); border-bottom: 2px solid #fff; }
+#section2 .product-list .list-part .list:hover .ko-list { color: #fff; }
+#section2 .product-list .list-part .list:hover .en-list { color: rgba(255, 255, 255, 0.5); }
+#section2 .product-list.disappear { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-animation: list-disappear 0.3s; animation: list-disappear 0.3s; }
+#section2 .product-list.active { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-animation: list-appear 0.3s; animation: list-appear 0.3s; }
+#section2 .company-name-box { display: block; width: 20%; float: right; margin-right: 20%; }
+#section2 .company-name-box .company-name { width: 100%; }
+#section2 .company-name-box.hidden { display: none; }
+
+@font-face { font-family: 'Copperplate Gothic Light'; font-style: normal; font-weight: normal; src: local("/assets/Copperplate Gothic Light"), url("/assets/copperplate-gothic-light.woff") format("woff"); }
+@keyframes card-appear { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+.section { background-color: #041419; }
+
+#section3 .issues { position: relative; }
+#section3 .issues .card-nav { cursor: pointer; padding: 1rem; display: inline-block; border-bottom: 1px solid #fff; border-left: 1px solid #fff; position: absolute; top: 45%; }
+#section3 .issues .card-nav.left { -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); float: left; left: 15%; }
+#section3 .issues .card-nav.left.hidden { display: none; }
+#section3 .issues .card-nav.right { -webkit-transform: rotate(-135deg); -ms-transform: rotate(-135deg); transform: rotate(-135deg); float: right; right: 15%; }
+#section3 .issues .card-nav.right.hidden { display: none; }
+#section3 .issues .card-container { width: 55%; height: auto; display: block; overflow: hidden; margin-left: 22.5%; cursor: pointer; }
+#section3 .issues .card-container .card { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; display: none; width: 100%; height: auto; text-align: center; border: 1px solid #fff; background-size: cover; background-repeat: no-repeat; }
+#section3 .issues .card-container .card.active { display: block; }
+#section3 .issues .card-container .card .card-align { position: relative; display: block; padding: 5rem 0; }
+#section3 .issues .card-container .card .card-align .card-date { font-family: 'Copperplate Gothic Light'; color: #fff; font-size: 0.8rem; }
+#section3 .issues .card-container .card .card-align .card-title { margin: 2rem auto 0 auto; width: 50%; font-family: 'Nanum Myeongjo', serif; color: #fff; font-size: 1.2rem; line-height: 2rem; }
+#section3 .issues .card-container .card .card-align .card-subtitle { -o-text-overflow: ellipsis; text-overflow: ellipsis; margin: 2rem auto 0 auto; width: 40%; font-family: 'Nanum Myeongjo', serif; color: rgba(255, 255, 255, 0.5); font-size: 1rem; line-height: 1.5rem; white-space: normal; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; height: 3rem; }
+#section3 .issues .card-container .card .card-align .card-button { -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; display: inline-block; margin-top: 2rem; padding: 0.5rem 1rem; font-family: 'Nanum Myeongjo', serif; color: #fff; font-size: 0.8rem; border: 1px solid #fff; }
+#section3 .issues .card-container .card .card-align .card-button:hover { letter-spacing: 0.3rem; }
+#section3 .issues .card-container .card:hover .card-align .card-title { -webkit-text-decoration: underline solid #fff; text-decoration: underline solid #fff; }
+#section3 .footer { width: 100%; position: absolute; bottom: 3%; }
+#section3 .footer p { color: rgba(255, 255, 255, 0.5); font-family: 'Copperplate Gothic Light'; font-size: 0.8rem; text-align: center; }
+
+/*# sourceMappingURL=home.css.map */

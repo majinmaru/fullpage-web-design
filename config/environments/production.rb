@@ -31,7 +31,7 @@ Rails.application.configure do
   config.assets.js_compressor = :uglifier
   config.assets.css_compressor = :sass
   #Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
-  #bundle exec rake asset:precompileconfig.assets.precompile += %w( application.scss)
+  #config.assets.precompile += [ "blueprint/*.css" ]
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 
