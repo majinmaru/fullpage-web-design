@@ -14,6 +14,9 @@ Rails.application.configure do
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
 
+  # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
+  ###config.assets.precompile += %w( home.css )
+  
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
   # Add `rack-cache` to your Gemfile before enabling this.
   # For large-scale production use, consider using a caching reverse proxy like
@@ -26,8 +29,9 @@ Rails.application.configure do
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
-  # config.assets.css_compressor = :sass
-
+  ###config.assets.css_compressor = :sass
+  # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
+  ##config.assets.precompile += %w( public.js public.css  )
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 
